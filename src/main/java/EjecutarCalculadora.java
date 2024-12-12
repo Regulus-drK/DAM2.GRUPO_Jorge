@@ -61,6 +61,28 @@ public class EjecutarCalculadora {
                         System.out.println("Resultado: " + Calculadora.raizCuadrada(numero));
                     }
                 }
+                case 6 -> {
+                    System.out.print("Ingresa un número (debe ser mayor o igual a 0): ");
+                    double num1 = sc.nextDouble();
+                    System.out.print("Ingresa el segundo número: ");
+                    double num2 = sc.nextDouble();
+                    if (numero <= 0) {
+                        System.out.println("Error: No se puede calcular el porcentaje de un número negativo.");
+                    } else {
+                        System.out.println("Resultado: " + Calculadora.porcentaje(numero));
+                    }
+                }
+                case 7 -> {
+                    System.out.print("Ingresa un número (debe ser mayor o igual a 0): ");
+                    double num1 = sc.nextDouble();
+                    System.out.print("Ingresa el segundo número: ");
+                    double num2 = sc.nextDouble();
+                    if (numero <= 0) {
+                        System.out.println("Error: No se puede calcular el resto de un número negativo.");
+                    } else {
+                        System.out.println("Resultado: " + Calculadora.resto(numero));
+                    }
+                }
                 case 0 -> System.out.println("Saliendo del programa ...");
                 default -> System.out.println("Opción inválida. Por favor, selecciona una opción válida.");
             }
