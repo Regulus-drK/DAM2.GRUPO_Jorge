@@ -66,10 +66,10 @@ public class EjecutarCalculadora {
                     double num1 = sc.nextDouble();
                     System.out.print("Ingresa el segundo número: ");
                     double num2 = sc.nextDouble();
-                    if (numero <= 0) {
+                    if (num2 <= 0) {
                         System.out.println("Error: No se puede calcular el porcentaje de un número negativo.");
                     } else {
-                        System.out.println("Resultado: " + Calculadora.porcentaje(numero));
+                        System.out.println("Resultado: " + Calculadora.porcentaje(num1, num2));
                     }
                 }
                 case 7 -> {
@@ -77,10 +77,10 @@ public class EjecutarCalculadora {
                     double num1 = sc.nextDouble();
                     System.out.print("Ingresa el segundo número: ");
                     double num2 = sc.nextDouble();
-                    if (numero <= 0) {
+                    if (num2 <= 0) {
                         System.out.println("Error: No se puede calcular el resto de un número negativo.");
                     } else {
-                        System.out.println("Resultado: " + Calculadora.resto(numero));
+                        System.out.println("Resultado: " + Calculadora.resto(num1, num2));
                     }
                 }
                 case 0 -> System.out.println("Saliendo del programa ...");
