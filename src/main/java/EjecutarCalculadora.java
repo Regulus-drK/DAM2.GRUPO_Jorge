@@ -12,6 +12,8 @@ public class EjecutarCalculadora {
             System.out.println("3. Multiplicar");
             System.out.println("4. Dividir");
             System.out.println("5. Raíz Cuadrada");
+            System.out.println("6. Porcentaje");
+            System.out.println("7. Resto");
             System.out.println("0. Salir");
 
             System.out.print("\nSelecciona una opción: ");
